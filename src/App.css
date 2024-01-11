@@ -1,0 +1,202 @@
+.Main{
+  width: 100vw;
+  height: 100vh;
+overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+position: fixed;
+top: 0;
+left: 0;
+
+}::-webkit-scrollbar{
+  display: none;
+}
+.sub_main{
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  background-color: #d9a88a;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  
+}
+.left_main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+background-color: #1e1e1e;
+  animation: border 0.5s linear forwards 1;
+  overflow-y: scroll;
+}
+@keyframes border{
+  100%{
+    border-radius: 0px 180px 180px 0px;
+  }
+}
+.right_main{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32%;
+  height: 100%;
+  background: rgb(30,30,30);
+  background-color: #1e1e1e;
+  animation: borderone 0.5s linear forwards 1;
+}@keyframes borderone{
+  100%{
+    border-radius: 180px 0px 0px 180px;
+  }
+}
+
+.smartWatch{
+  width: 36%;
+  height: 90%;
+  position: absolute;
+  right: 10.8rem;
+  z-index: 20;
+  top: -10rem;
+  bottom: 0;
+  margin: auto;
+  animation: watchspring 0.5s linear forwards 1;
+  scale: 1.5;
+  transition: 0.5s ease-in-out;
+}
+@keyframes watchspring {
+100%{
+  top: 0;
+  scale: 1;
+}
+
+
+}
+
+.smartWatch img{
+  width: 100%;
+  height: 100%;
+}
+
+.left_nav{
+  width: 48%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px 50px 50px 0px;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    color: grey;
+position: static;
+    align-items: center;
+    z-index: 10;
+
+  position: fixed;
+   background-color: #1e1e1e;
+  
+}
+.left_nav :nth-child(1){
+  font-weight: 900;
+}
+
+.name_box{
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+
+}
+
+.name_box >h1{
+  text-align: center;
+  font-size: 8rem;
+  letter-spacing: 10px;
+
+}
+
+.name_stroke {
+  color: #00000000; /* Set the text color */
+  -webkit-text-stroke: 1px #ffffff; /* Width and color of the text stroke for WebKit browsers */
+  text-stroke: 1px #000; 
+background-color: transparent;
+}
+
+.price{
+  margin-right: 2rem;
+  font-size: 2rem;
+  text-align: start;
+}
+.priceone{
+  margin-right: 2rem;
+  font-size: 1.4rem;
+  text-align: start;
+  color: grey;
+  letter-spacing: 5px;
+}
+.collage{
+  margin: auto;
+  width: 90%;
+  height: 50vh;
+margin-top: 5px;
+  display: flex;
+  gap: 5px;
+
+}
+
+.collage img{
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.collage .first{
+  width: 60%;
+  height: 100%;
+
+}
+.collage .second{
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.collage img:hover{
+  transform: scale(1.4);
+
+}
+
+.nextWatch{
+  width: 25%;
+  height: 19%;
+  border: 1px solid white;
+  border-radius: 20px;
+  position: absolute;
+  left:7rem; 
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.nextWatch img{
+  width: 100%;
+  height: 100%;
+}
+
+.cart{
+  width: 7%;
+  height: auto;
+font-weight: 700;
+  position: absolute;
+  right: 21.4rem;
+  bottom: 1rem;
+color: white;
+font-size: 0.8rem;
+font-family: sans-serif;
+text-align: center;
+cursor: pointer;
+z-index: 30;
+}
